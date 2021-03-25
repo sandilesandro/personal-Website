@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multimedia Designer & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+  <div class="container" id="container">
+
+    <div id="menu-bar">
+    			<div id="menu" onclick="onClickMenu()">
+    				<div id="bar1" class="bar"></div>
+    				<div id="bar2" class="bar"></div>
+    				<div id="bar3" class="bar"></div>
+    			</div>
+    			<ul class="nav" id="nav">
+    				<li><a href="#container">Home</a></li>
+    				<li><a href="#about">About</a></li>
+    				<li><a href="#contact-page">Contact</a></li>
+    			</ul>
+    		</div>
+    		<div class="menu-bg" id="menu-bg"></div>
+
+    <div class="logo">S.M</div>
+
+    <div class="x-text"></div>
+
+   
+
+    <div class="vertical_line"></div>
+
+    <div class="description">
+      <h3>Multimedia Designer & Web Developer</h3>
+      
+      <button type="button" class="read-more-btn" id="playBtn">About me</button>
+    </div>
+
+  </div>
+
+
+  <div class="about" id="about">
+    <div class="left-about">
+      <div class="circle"></div>
+        <div class="circle-full"></div>
+      <h6 class="who">
+        Who I am
+      </h6>
+
+      <p class="info">Pretoria based multimedia designer, focusing on various online and offline design disciplines such as video editing, web design, web development, social media, and branding. The goal of my work is to find quick, compelling, unique and visually appealing solutions to design challenges and also to find the best way to unite clients'/organization’s desires with the expertise of my design training and experience. 
+
+      </p>
+    </div>
+
+    <div class="right-about">
+      <button type="button" class="hire-me-btn">Hire me</button>
+    </div>
+
+    <div class="social-media">
+      <ul>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="contact-page" id="contact-page">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact_2.jpg" style="width:98%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Service required</label>
+        <select id="country" name="country" placeholder="Select service">
+          <option value="australia">Graphic Design</option>
+          <option value="canada">Motion Design</option>
+          <option value="usa">Web Dev & Design</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png"alt=""></button>
+
+  <script src="script.js"></script>
+  </body>
+</html>

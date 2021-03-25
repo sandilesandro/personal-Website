@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  position: absolute;
+  top: 3%;
+  letter-spacing: 5px;
+  right: 7%;
+  width: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #dedfe1;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("bgg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/*-------Menu---------*/
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #b99479;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+  color: #dedfe1;
+}
+.nav li {
+  list-style: none;
+  padding: 55px 0;
+  font-size: 21px;
+}
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+.menu-bg,
+#menu-bar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #b99479;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+#menu-bar {
+  z-index: 2;
+}
+.change-bg {
+  width: 900px;
+  height: 900px;
+  transform: translate(-60%, -30%);
+}
+.change .bar {
+  background-color: white;
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
+.change {
+  display: block;
+}
+/*-----------end menu------------*/
+
+.travel-text {
+  position: absolute;
+  font-size: 650px;
+  color: #fff;
+  font-weight: bolder;
+  top: 6%;
+  left: 4%;
+  opacity: 15%;
+}
+
+.plus-text {
+  position: absolute;
+  font-size: 650px;
+  color: #fff;
+  font-weight: bolder;
+  top: 15%;
+  left: 5%;
+  opacity: 20%;
+}
+
+.plus-text_2 {
+  position: absolute;
+  font-size: 650px;
+  color: #fff;
+  font-weight: bolder;
+  top: 15%;
+  left: 75%;
+  opacity: 39%;
+}
+
+.vertical_line {
+  position: absolute;
+  height: 900px;
+  width: 2px;
+  background: #fff;
+  opacity: 15%;
+  right: 2%;
+  top: 12%;
+}
+
+.description {
+  position: absolute;
+  top: 70%;
+  left: 4.35%;
+  z-index: 0;
+  color: #fff;
+}
+
+.description h3 {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.description p {
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.read-more-btn {
+  position: absolute;
+  height: 70px;
+  width: 210px;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.read-more-btn:hover {
+  background: #333;
+  color: #fff;
+  width: 260px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+/*--------About section---------*/
+
+.about {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-about {
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+.who {
+  position: absolute;
+  top: 15%;
+  left: 4.35%;
+  font-size: 55px;
+  color: #3b3938;
+  padding-bottom: 30px;
+}
+
+.info {
+  position: absolute;
+  font-size: 21px;
+  top: 31%;
+  width: 35%;
+  left: 4.35%;
+  color: #3b3938;
+}
+
+.circle {
+  position: absolute;
+  left: -18%;
+  top: 8%;
+  border: 120px solid #dedfe1;
+  border-radius: 50%;
+  width: 850px;
+  opacity: 60%;
+  height: 850px;
+}
+
+.circle-full {
+  position: absolute;
+  left: 3%;
+  top: 2%;
+  border: 850px solid #b99479;
+  border-radius: 50%;
+  width: 850px;
+  opacity: 20%;
+  height: 850px;
+}
+
+.right-about {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: url("13.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.right-about:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: ;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hire-me-btn {
+  position: absolute;
+  height: 70px;
+  width: 210px;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.hire-me-btn:hover {
+  color: #fff;
+  width: 260px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+/*--------Social Media--------*/
+.social-media {
+  position: absolute;
+  font-family: sans-serif;
+  width: 20px;
+  height: 40px;
+  z-index: 9;
+  top: 85%;
+  left: 4.35%;
+  z-index: 0;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+}
+
+.social-media li {
+  font-size: 16px;
+  margin-right: 35px;
+}
+
+.social-media i {
+  margin-right: 35px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.social-media i:hover {
+  color: #bfa08a;
+  transition: all 0.3s ease-out;
+}
+
+.follow {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 90%;
+  left: 4.53%;
+  margin-top: 20px;
+  font-size: 19px;
+  color: #333;
+}
+
+/*--------Contact-page----------*/
+
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #b99479;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Style the container/contact section */
+.contact-page {
+  border-radius: 5px;
+  padding-top: 80px;
+}
+
+.contact-page h2 {
+  font-size: 39px;
+  padding-bottom: 30px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  height: 60px;
+  width: 60px; /* Fixed/sticky position */
+  bottom: 12px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b99479; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  justify-content: space-around;
+  align-items: center;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#myBtn img {
+  width: 35px;
+  color: #fff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*--------Media Queries---------*/
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 99;
+  }
+
+  .description {
+    position: absolute;
+    top: 79%;
+    left: 4.35%;
+    color: #fff;
+    display: none;
+  }
+
+  .description h3 {
+    font-size: 25px;
+    z-index: -1;
+  }
+
+  .read-more-btn {
+    position: absolute;
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .who {
+    position: absolute;
+    top: 15%;
+    left: 4.35%;
+    font-size: 35px;
+    color: #3b3938;
+    padding-bottom: 10px;
+  }
+
+  .info {
+    position: absolute;
+    font-size: 15px;
+    top: 25%;
+    width: 35%;
+    left: 4.35%;
+    color: #3b3938;
+  }
+
+  .circle {
+    position: absolute;
+    left: -18%;
+    top: 8%;
+    border: 40px solid #dedfe1;
+    border-radius: 50%;
+    width: 250px;
+    opacity: 60%;
+    height: 250px;
+  }
+
+  .circle-full {
+    position: absolute;
+    left: 3%;
+    top: 45%;
+    border: 250px solid #b99479;
+    border-radius: 50%;
+    width: 450px;
+    opacity: 20%;
+    height: 450px;
+  }
+
+  .hire-me-btn {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 150px;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .right-about {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: url("13.jpg");
+    background-position: center;
+
+    background-repeat: no-repeat;
+  }
+
+  .hire-me-btn:hover {
+    color: #fff;
+    width: 260px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .left-about .info {
+    font-size: 15px;
+  }
+
+  .hire-me-btn {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .hire-me-btn:hover {
+    color: #fff;
+    width: 260px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
+  .circle {
+    position: absolute;
+    left: -8%;
+    top: 8%;
+    border: 40px solid #dedfe1;
+    border-radius: 50%;
+    width: 250px;
+    opacity: 60%;
+    height: 250px;
+  }
+
+  .circle-full {
+    position: absolute;
+    left: 17%;
+    top: 20%;
+    border: 250px solid #b99479;
+    border-radius: 50%;
+    width: 450px;
+    opacity: 20%;
+    height: 450px;
+  }
+}
